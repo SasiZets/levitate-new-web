@@ -112,8 +112,12 @@ body {
   opacity: 0;
   -webkit-transform: translateY(40px) scale(1.04);
           transform: translateY(40px) scale(1.04);
+          
+                
 }
-
+.range{
+  line-height: 25px !important;
+}
 /* -------------------------------------------
 
 page transitions
@@ -499,6 +503,7 @@ a {
 .mil-text-md {
   font-size: 16px;
   line-height: 160%;
+ 
 }
 
 .mil-text-sm {
@@ -614,7 +619,7 @@ a {
 .mil-head1 {
   font-size: 56px;
   line-height: 120%;
-  display: flex;
+  
   
 }
 @media (max-width: 768px) {
@@ -629,8 +634,9 @@ a {
 }
 
 .mil-head3 {
-  font-size: 32px;
+  font-size: 34px;
   line-height: 120%;
+  
 }
 
 .mil-head4 {
@@ -1241,6 +1247,7 @@ spaces
 
 .mil-mb60 {
   margin-bottom: 60px;
+
 }
 
 .mil-mb90 {
