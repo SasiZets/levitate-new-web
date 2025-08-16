@@ -95,7 +95,7 @@ main
 }
 
 body {
-  font-family: "Lexend", sans-serif;;
+  font-family: "Lexend", sans-serif;
   color: rgba(210, 210, 208, 0.6);
   font-weight: 300;
   font-size: 14px;
@@ -2459,6 +2459,7 @@ preloader
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* flex-direction: column; */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2467,8 +2468,10 @@ preloader
           align-items: center;
 }
 .mil-preloader .mil-preloader-animation .mil-pos-abs p {
-  font-family: "Anton", sans-serif;
-  text-transform: uppercase;
+  font-family: "Lexend", sans-serif;
+  font-weight: 700;
+  font-size:45px;
+  /* text-transform: uppercase; */
   opacity: 0;
   margin-right: 15px;
   -webkit-filter: blur(10px);
