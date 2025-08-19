@@ -2993,11 +2993,6 @@ menu window
   overflow: hidden;
 }
 .border{
-  border: 2px  #D2D2D0 solid;
-  border-radius: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 10px;
   margin-bottom: 30px;
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
@@ -5144,6 +5139,7 @@ footer
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: center;
+          padding-bottom: 50px;
 }
 @media (max-width: 500px) {
   .mil-footer-bottom {
