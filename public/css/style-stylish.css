@@ -2992,6 +2992,22 @@ menu window
   padding: 60px;
   overflow: hidden;
 }
+.border{
+  border: 2px  #D2D2D0 solid;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.border:hover{
+  border-color: #CD512F ;
+  .mil-head4 {
+    color: #CD512F;
+  }
+  
+}
 .mil-menu-frame .mil-menu-window .mil-social-section {
   height: 120px;
   background-color: #CD512F;
