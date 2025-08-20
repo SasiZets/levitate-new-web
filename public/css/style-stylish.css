@@ -477,13 +477,13 @@ a {
   transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-arrow-link.mil-a1:after {
-  color: #CD512F;
+  color: #256667;
 }
 .mil-arrow-link.mil-a2 {
-  color: #CD512F;
+  color: #256667;
 }
 .mil-arrow-link.mil-a2:after {
-  color: #CD512F;
+  color: #256667;
 }
 .mil-arrow-link:hover:after {
   -webkit-transform: translateX(5px);
@@ -840,7 +840,7 @@ cursor
           transition-delay: 0s;
 }
 .mil-cursor-follower.mil-light-active, .mil-cursor-follower.mil-dark-active, .mil-cursor-follower.mil-gone-active, .mil-cursor-follower.mil-view-active, .mil-cursor-follower.mil-next-active, .mil-cursor-follower.mil-read-active, .mil-cursor-follower.mil-swipe-active {
-  background-color: #CD512F;
+  background-color: #256667;
   -webkit-transform: scale(3);
           transform: scale(3);
   -webkit-filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.15));
@@ -918,7 +918,7 @@ scrollbar
   background-color: #000;
 }
 .mil-progress-track .mil-progress {
-  background-color: #CD512F;
+  background-color: #256667;
   height: 0;
   width: 4px;
   border-radius: 4px;
@@ -940,7 +940,7 @@ scrollbar
   background: transparent;
 }
 .mil-inner-scroll::-webkit-scrollbar-thumb {
-  background: #CD512F;
+  background: #256667;
   border: solid 8px #000000;
   border-radius: 15px;
 }
@@ -988,7 +988,7 @@ breadcrumbs
   display: none;
 }
 .mil-breadcrumbs li:last-child a {
-  color: #CD512F;
+  color: #256667;
   pointer-events: none;
 }
 
@@ -1031,22 +1031,22 @@ buttons
   color: #D2D2D0;
 }
 .mil-btn.mil-a1 {
-  background-color: #CD512F;
+  background-color: #256667;
 }
 .mil-btn.mil-a1.mil-btn-border {
   background-color: transparent;
-  -webkit-box-shadow: 0 0 0 2px #CD512F;
-          box-shadow: 0 0 0 2px #CD512F;
-  color: #CD512F;
+  -webkit-box-shadow: 0 0 0 2px #256667;
+          box-shadow: 0 0 0 2px#256667;
+  color: #256667;
 }
 .mil-btn.mil-a2 {
-  background-color: #CD512F;
+  background-color: #256667;
 }
 .mil-btn.mil-a2.mil-btn-border {
   background-color: transparent;
-  -webkit-box-shadow: 0 0 0 2px #CD512F;
-          box-shadow: 0 0 0 2px #CD512F;
-  color: #CD512F;
+  -webkit-box-shadow: 0 0 0 2px #256667;
+          box-shadow: 0 0 0 2px#256667;
+  color: #256667;
 }
 .mil-btn.mil-m1 {
   background-color: #D2D2D0;
@@ -1114,10 +1114,10 @@ buttons
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-stylized-btn.mil-a1 {
-  background-color: #CD512F;
+  background-color: #256667;
 }
 .mil-stylized-btn.mil-a2 {
-  background-color: #CD512F;
+  background-color: #256667;
 }
 .mil-stylized-btn span {
   padding: 0 20px;
@@ -1190,7 +1190,7 @@ form input {
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
 form input:hover, form input:focus {
-  border-color: #CD512F;
+  border-color: #256667;
 }
 form textarea {
   padding: 20px 30px;
@@ -1210,7 +1210,7 @@ form textarea {
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
 form textarea:hover, form textarea:focus {
-  border-color: #CD512F;
+  border-color: #256667;
 }
 form.mil-stl input, form.mil-stl textarea {
   color: #D2D2D0;
@@ -2998,9 +2998,9 @@ menu window
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
 .border:hover{
-  border-color: #CD512F ;
+  border-color: #256667 ;
   .mil-head4 {
-    color: #CD512F;
+    color: #256667;
   }
   
 }
@@ -3136,7 +3136,7 @@ menu window
 .mil-menu-frame-2 .mil-menu-window .mil-right-side .mil-links-part .mil-links {
   text-align: right;
   padding-right: 30px;
-  border-right: solid 4px #CD512F;
+  border-right: solid 4px #256667;
 }
 .mil-menu-frame-2 .mil-menu-window .mil-right-side .mil-links-part .mil-links li {
   margin-bottom: 15px;
@@ -3488,7 +3488,7 @@ services
   border-top: solid 1px #181817;
 }
 .mil-service-card-lg:hover .mil-stylized-btn {
-  background-color: #CD512F;
+  background-color: #256667;
 }
 @media (max-width: 768px) {
   .mil-service-card-lg ul {
@@ -4125,7 +4125,7 @@ tapes
   top: 40%;
   right: -50%;
   width: 150%;
-  background-color: #CD512F;
+  background-color:#256667;
   height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5219,7 +5219,7 @@ footer
   border-radius: 50%;
   border: none;
   color: #D2D2D0;
-  background-color: #CD512F;
+  background-color: #256667;
 }
 .mil-subscribe-form button i {
   font-size: 24px;
