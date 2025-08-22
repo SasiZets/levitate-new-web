@@ -503,6 +503,7 @@ a {
 .mil-text-md {
   font-size: 16px;
   line-height: 160%;
+
  
 }
 
@@ -5226,4 +5227,13 @@ footer
 }
 .mil-subscribe-form button i {
   font-size: 24px;
+}
+/* ..............................padding for why choode us <p>..................................... */
+.modify{
+  padding-left: 125PX;
+}
+@media(max-width:540px){
+  .modify{
+  padding-left: 1PX;
+}
 }
