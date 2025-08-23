@@ -3963,14 +3963,28 @@ team
           justify-content: flex-end;
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
-   background: radial-gradient(
-      circle at center, 
-      rgba(0, 128, 128, 0.2) 0%,    /* Center (20% opacity) */
-      rgba(0, 128, 128, 0.6) 50%,   /* Top-left zone (60% opacity) */
-      rgba(0, 128, 128, 0.8) 100%   /* Top-right zone (80% opacity) */
-  );
+ background: 
+    linear-gradient(
+      to top right,
+      rgba(0, 128, 128, 0.2) 0%,
+      rgba(0, 128, 128, 0.6) 1600%,
+      rgba(0, 128, 128, 0.8) 100%
+    ),
+    linear-gradient(
+      to bottom left,
+      rgba(0, 128, 128, 0.2) 0%,
+      rgb(63, 43, 82) 130%,
+      rgba(71, 38, 103, 1) 100%
+    );
+  background-blend-mode: overlay; 
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 2;
 }
-.mil-team-card .mil-hover-overlay .mil-descr {
+
+
+
+ .mil-team-card .mil-hover-overlay .mil-descr {
   background-color: #D2D2D0;
   padding: 30px;
   display: -webkit-box;
@@ -3995,7 +4009,7 @@ team
   color: #000000;
 }
 .mil-team-card.mil-stl .mil-hover-overlay {
-  /* background-image: url(../img/team/overlay.png); */
+  /* background-image: url(../img/team/overlay.png);  */
   background-color:transparent;
 }
 .mil-team-card.mil-stl .mil-hover-overlay .mil-descr {
