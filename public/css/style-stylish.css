@@ -1397,7 +1397,7 @@ hero 1
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding-bottom: 30px;
+  padding: 50px 0px 50px;
 }
 .mil-hero-1 .mil-hero-main .mil-hero-text .mil-text-pad {
   background-color: #1a1a1a;
@@ -5188,18 +5188,31 @@ footer
 }
 @media (max-width: 1200px) {
   .mil-footer-link {
-    font-size: calc(1rem + 5.4vw);
+    font-size: calc(1rem + 4.4vw);
   }
 }
 @media (max-width: 992px) {
   .mil-footer-link {
-    font-size: calc(1rem + 6.4vw);
+    font-size: calc(1rem + 3.4vw);
   }
 }
 @media (max-width: 768px) {
   .mil-footer-link {
     font-size: calc(1rem + 7.4vw);
   }
+  
+}
+@media (max-width: 500px) {
+  .mil-footer-link {
+    font-size: calc(1rem + 4.4vw);
+  }
+  
+}
+@media (max-width: 400px) {
+  .mil-footer-link {
+    font-size: calc(1rem + 4.4vw);
+  }
+  
 }
 
 .mil-subscribe-form {
@@ -5256,4 +5269,16 @@ footer
   .modify{
   padding-left: 1PX;
 }
+}
+/* ...................................veiw all members.................. */
+.modify2{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  /* .......................................about head title................ */
+
+}
+.modify3{
+  font-size:60px;
+
 }
