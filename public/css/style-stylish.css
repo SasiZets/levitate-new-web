@@ -629,6 +629,7 @@ a {
     display: flex;
     /* flex-direction:column; */
     flex-wrap: wrap;
+  
  
   }
 }
@@ -2023,8 +2024,9 @@ hero 4
   -o-object-position: top;
      object-position: top;
   top: 300px;
-  left: 0;
-  width: 100%;
+  left: 200px;
+  width:1400px;
+  height: 140vh;
   -webkit-animation: hero-anim 20s ease-in-out infinite;
           animation: hero-anim 20s ease-in-out infinite;
 }
@@ -2101,7 +2103,6 @@ hero 4
     left: -120vw;
   }
 }
-
 @-webkit-keyframes hero-anim {
   0% {
     -webkit-transform: translateY(-20%) scale(0.9);
@@ -5280,6 +5281,13 @@ footer
 /* ........................why choose us..................................... */
 .modify3{
   margin-top: 190px;
+}
+
+@media (max-width:500px){
+ .modify5{
+  margin-bottom: 20px;
+ }
+
 }
 /* ................explore our agency.................. */
 @media (max-width: 768px){
