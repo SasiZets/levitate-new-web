@@ -5298,3 +5298,7 @@ footer
   justify-content: center;
 }
 }
+/* ...................review section.................... */
+.modify5{
+  flex-direction: column;
+}
