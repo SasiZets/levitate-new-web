@@ -2501,7 +2501,7 @@ preloader
   z-index: 9;
   opacity: 1 !important;
   height: 100%;
-  background-color: #256667;
+  /* background-color: #256667; */
 }
 .mil-preloader .mil-preloader-animation .mil-pos-abs .mil-reveal-frame p {
   -webkit-filter: blur(0px);
