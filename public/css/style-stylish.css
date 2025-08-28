@@ -2096,7 +2096,7 @@ transform: translate(-50%, -50%);
 }
 @media (max-width: 768px) {
   .mil-hero-4 .mil-hero-scene .mil-anim-frame .mil-hero-animation {
-    width: 150%;
+    width: 130%;
     left: -15vw;
   }
   .mil-hero-4 .mil-hero-main {
