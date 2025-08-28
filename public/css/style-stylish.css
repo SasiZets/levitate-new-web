@@ -2023,10 +2023,12 @@ hero 4
      object-fit: contain;
   -o-object-position: top;
      object-position: top;
-  top: 300px;
-  left: 200px;
-  width:1400px;
-  height: 140vh;
+ top: 35vh;   /* was 300px */
+  left: 15vw;  /* was 200px */
+
+  width: 80vw;  /* scales with screen size */
+  height: auto; /* maintain aspect ratio */
+transform: translate(-50%, -50%);
   -webkit-animation: hero-anim 20s ease-in-out infinite;
           animation: hero-anim 20s ease-in-out infinite;
 }
@@ -2103,7 +2105,7 @@ hero 4
     left: -120vw;
   }
 }
-@-webkit-keyframes hero-anim {
+/* @-webkit-keyframes hero-anim {
   0% {
     -webkit-transform: translateY(-20%) scale(0.9);
             transform: translateY(-20%) scale(0.9);
@@ -2116,7 +2118,7 @@ hero 4
     -webkit-transform: translateY(-20%) scale(0.9);
             transform: translateY(-20%) scale(0.9);
   }
-}
+} */
 
 @keyframes hero-anim {
   0% {
@@ -2124,8 +2126,8 @@ hero 4
             transform: translateY(-20%) scale(0.9);
   }
   50% {
-    -webkit-transform: translateY(-30%) scale(1);
-            transform: translateY(-30%) scale(1);
+    -webkit-transform: translateY(-25%) scale(1);
+            transform: translateY(-25%) scale(1);
   }
   100% {
     -webkit-transform: translateY(-20%) scale(0.9);
