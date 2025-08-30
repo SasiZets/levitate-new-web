@@ -8,14 +8,14 @@ Portfolio:   https://themeforest.net/user/millerdigitaldesign/portfolio?ref=Mill
 p.s. I am available for Freelance hire (UI design, web development). email: miller.themes@gmail.com
    
 // ------------------------------------------- */
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
-    import { getDatabase,ref,push,onvalue,remove,set } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-database.js";
-const websettings={
-    databaseURL:"https://levitate-website-ba679-default-rtdb.firebaseio.com/"
-};
+//   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+//     import { getDatabase,ref,push,onvalue,remove,set } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-database.js";
+// const websettings={
+//     databaseURL:"https://levitate-website-ba679-default-rtdb.firebaseio.com/"
+// };
 
-const webapp=initializeApp(websettings);
-const database=getDatabase(webapp);
+// const webapp=initializeApp(websettings);
+// const database=getDatabase(webapp);
 
 document.addEventListener("DOMContentLoaded", function () {
     "use strict";
