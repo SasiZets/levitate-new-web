@@ -4416,7 +4416,7 @@ blog
           transform: scale(1);
 }
 .mil-blog-card:hover .mil-descr .mil-stylized-btn {
-  background-color: #CD512F;
+  background-color: #256667;
 }
 @media (max-width: 768px) {
   .mil-blog-card .mil-descr .mil-text-frame {
