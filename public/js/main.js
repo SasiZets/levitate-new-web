@@ -1,11 +1,4 @@
-/* -------------------------------------------
 
-Name: 		 Pixy
-Version:     1.0
-Developer:   Nazar Miller (millerDigitalDesign)
-Portfolio:   https://themeforest.net/user/millerdigitaldesign/portfolio?ref=MillerDigitalDesign
-
-p.s. I am available for Freelance hire (UI design, web development). email: miller.themes@gmail.com
    
 // ------------------------------------------- */
 //   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
