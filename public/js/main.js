@@ -93,11 +93,11 @@ document.addEventListener("DOMContentLoaded", function () {
         .to(".mil-animation-2 p", 0.6, {
             opacity: 0,
             y: '-30'
-        }, "+=0.5")
+        }, "+=1")
         .to(".mil-preloader", 0.8, {
             opacity: 0,
             ease: 'sine'
-        }, "+=0.2")
+        }, "+=2")
         .add(() => {
             ScrollTrigger.refresh();
         }, "-=1")
