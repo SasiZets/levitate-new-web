@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .to(".mil-preloader", 0.8, {
             opacity: 0,
             ease: 'sine'
-        }, "+=1")
+        }, "+=0.2")
         .add(() => {
             ScrollTrigger.refresh();
         }, "-=1")
