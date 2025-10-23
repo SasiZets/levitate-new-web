@@ -5338,4 +5338,9 @@ color: #ffffff9f;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   color: #ffffff;
+  background-color: #4C4C4C;
+}
+/* ..................poster desgign option......................................................... */
+.poster{
+  display: none;
 }
