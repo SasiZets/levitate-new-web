@@ -5317,6 +5317,8 @@ gap: 22px;
   align-items: center;
   padding-bottom: 60px;
   flex-wrap: wrap;
+    z-index: 10;
+
 }
 .ser-option{
   width: 222px;
@@ -5330,11 +5332,11 @@ gap: 22px;
 font-weight: 400;
 font-size: 14px;
 color: #ffffff9f;
-
+  z-index: 10;
 
 }
 .ser-option:hover{
-  transform: scale(1.1);
+  transform: scale(1.1); 
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   color: #ffffff;

@@ -2,16 +2,15 @@ document.addEventListener("DOMContentLoaded",()=>{
     
     // .........................poster-design button......................................
 
-
-const poster_button=document.getElementById("Poster-design");
-
- poster_button.addEventListener("click",(event)=>{
+  let poster_option=document.getElementById("option1");
 
     let poster=document.getElementById("poster");
-    let portfolio=document.getElementById("portfolio-layout");
-    let poster_option=document.getElementById("option1");
 
-    console.log("hello")
+    let portfolio=document.getElementById("portfolio-layout");
+  
+
+ poster_option.addEventListener("click",(event)=>{
+
     if(poster.style.display=="none"){
         
         poster.style.display="block"
