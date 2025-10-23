@@ -5345,7 +5345,7 @@ color: #ffffff9f;
 .ser-option.active {
   background-color: #4C4C4C;
   color: #ffffff;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 /* ..................poster desgign option......................................................... */
 .poster{
