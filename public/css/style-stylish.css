@@ -5355,14 +5355,46 @@ color: #ffffff9f;
 
 .social-media{
   display: grid;
-  grid-template-columns: repeat(4,360px);
+  grid-template-columns: repeat(4,1fr);
   width: 100%;
   gap: 15px;
   padding: 20px;
   margin-bottom: 130px;
-  
+   
 }
 .c1{
-  width: 350px;
+  width:100%;
   
+}
+@media (max-width:1200px) {
+
+.social-media{
+  grid-template-columns: repeat(4,1fr);
+   
+}
+  
+}
+
+@media (max-width:950px) {
+
+.social-media{
+  grid-template-columns: repeat(3,1fr);
+   
+}
+  
+}
+@media (max-width:780px) {
+
+.social-media{
+  grid-template-columns: repeat(2,1fr);
+   
+}
+  
+}
+@media (max-width:550px) {
+
+.social-media{
+  grid-template-columns: repeat(1,1fr);
+   
+}
 }
