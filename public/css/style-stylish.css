@@ -5350,3 +5350,19 @@ color: #ffffff9f;
 .poster{
   display: none;
 }
+
+/* .......................grid layout .................................................................... */
+
+.social-media{
+  display: grid;
+  grid-template-columns: repeat(4 ,1fr);
+  width: 100%;
+  gap: 30px;
+  padding: 40px;
+  margin-bottom: 130px;
+  
+}
+.c1{
+  width: 100%;
+  
+}
