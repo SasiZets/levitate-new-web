@@ -5355,14 +5355,14 @@ color: #ffffff9f;
 
 .social-media{
   display: grid;
-  grid-template-columns: repeat(4 ,1fr);
+  grid-template-columns: repeat(4,360px);
   width: 100%;
-  gap: 30px;
-  padding: 40px;
+  gap: 15px;
+  padding: 20px;
   margin-bottom: 130px;
   
 }
 .c1{
-  width: 100%;
+  width: 350px;
   
 }
