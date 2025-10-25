@@ -3002,7 +3002,7 @@ menu window
 .mil-menu-frame .mil-menu-window .mil-blog-section {
   border-top: solid 1px #181817;
   padding: 60px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .border{
   padding: 10px;
