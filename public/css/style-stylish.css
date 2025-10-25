@@ -4525,7 +4525,7 @@ blog
           filter: brightness(95%);
 }
 .mil-blog-pagination ul li.mil-active a {
-  background-color: #CD512F;
+  background-color: #256667;
 }
 
 .mil-nl-nav {
@@ -4716,7 +4716,43 @@ portfolio
      object-position: center;
 }
 .mil-work-card .mil-hover-overlay {
-  background-color: rgba(205, 81, 47, 0.7);
+   opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   background-color: rgba(0, 128, 128, 0.4);;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+ background: 
+    linear-gradient(
+      to top right,
+      rgba(0, 128, 128, 0.2) 0%,
+      rgba(0, 128, 128, 0.6) 1600%,
+      rgba(0, 128, 128, 0.8) 100%
+    ),
+    linear-gradient(
+      to bottom left,
+      rgba(0, 128, 128, 0.2) 0%,
+      rgb(63, 43, 82) 130%,
+      rgba(71, 38, 103, 1) 100%
+    );
+  background-blend-mode: overlay; 
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 2;
+  /* background-color: rgba(205, 81, 47, 0.7);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -4734,7 +4770,7 @@ portfolio
       -ms-flex-pack: end;
           justify-content: flex-end;
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
-  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1); */
 }
 .mil-work-card .mil-hover-overlay .mil-descr {
   width: 100%;
@@ -4760,7 +4796,7 @@ portfolio
   padding: 0 60px;
 }
 .mil-work-card.mil-stl .mil-hover-overlay {
-  background-image: url(../img/team/overlay.jpg);
+  /* background-image: url(../img/team/overlay.jpg); */
   background-color: transparent;
 }
 .mil-work-card.mil-stl .mil-hover-overlay .mil-descr {
@@ -5357,8 +5393,8 @@ color: #ffffff9f;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   width: 100%;
-  gap: 15px;
-  padding: 20px;
+  gap: 30px;
+  padding: 30px;
   margin-bottom: 130px;
    
 }
