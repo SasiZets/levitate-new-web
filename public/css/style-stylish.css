@@ -5434,3 +5434,25 @@ color: #ffffff9f;
    
 }
 }
+/* *........................privacy policy............................................. */
+.privacy-policy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.privacy-head{
+  padding: 100px 0 0 0;
+}
+.priv-date{
+  display: flex;
+  gap: 5px;
+  width: 90%;
+
+}
+.subtitle{
+   width: 70%;
+}
+.keywords{
+    color: #ffffff;
+}
