@@ -5442,16 +5442,20 @@ color: #ffffff9f;
   flex-direction: column;
 }
 .privacy-head{
-  padding: 100px 0 0 0;
+  padding: 160px 0 0 0;
 }
 .priv-date{
   display: flex;
   gap: 5px;
   width: 90%;
+  justify-content: center;
 
 }
 .subtitle{
    width: 70%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 .keywords{
     color: #ffffff;
