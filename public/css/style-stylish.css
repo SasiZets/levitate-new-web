@@ -941,6 +941,7 @@ scrollbar
   width: 20px;
   display: block;
   padding-right: 10px;
+  
 }
 .mil-inner-scroll::-webkit-scrollbar-track {
   background: transparent;
@@ -5440,9 +5441,10 @@ color: #ffffff9f;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 .privacy-head{
-  padding: 160px 0 0 0;
+  padding: 200px 0 0 0;
 }
 .priv-date{
   display: flex;
@@ -5452,10 +5454,13 @@ color: #ffffff9f;
 
 }
 .subtitle{
-   width: 70%;
+   width: 60%;
    display: flex;
    flex-direction: column;
    justify-content: center;
+   padding-left:40px;
+
+   
 }
 .keywords{
     color: #ffffff;
