@@ -1121,6 +1121,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function initPortfolioFilter() {
   const buttons = document.querySelectorAll(".ser-option");
   const cols = document.querySelectorAll(".col-md-3");
+  const noResults = document.getElementById("no-results");
 
   if (!buttons.length || !cols.length) return;
 
@@ -1131,6 +1132,7 @@ function initPortfolioFilter() {
       buttons.forEach(btn => btn.classList.remove("active"));
       button.classList.add("active");
 
+      let totalVisible = 0;
       cols.forEach(col => {
         const cards = col.querySelectorAll(".mil-work-card");
         let hasVisible = false;
@@ -1145,9 +1147,23 @@ function initPortfolioFilter() {
           }
         });
 
-        if (hasVisible) col.classList.remove("hide");
-        else col.classList.add("hide");
+        if (hasVisible) {
+          col.classList.remove("hide");
+          totalVisible++;
+        }
+        else {
+          col.classList.add("hide");
+        }
       });
+
+      // Show no-results if needed
+      if (noResults) {
+        if (totalVisible === 0) {
+          noResults.style.display = "block";
+        } else {
+          noResults.style.display = "none";
+        }
+      }
     });
   });
 }
