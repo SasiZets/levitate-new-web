@@ -5383,6 +5383,19 @@ color: #ffffff9f;
   background-color: #4C4C4C;
   color: #ffffff;
 }
+.col-md-3.hide {
+  display: none !important;
+}
+
+#portfolio-layout .row {
+  justify-content: center !important;
+  transition: all 0.3s ease;
+}
+
+.mil-work-card.hide {
+  display: none !important;
+}
+
 /* ..................poster desgign option......................................................... */
 .poster{
   display: none;
@@ -5442,6 +5455,7 @@ color: #ffffff9f;
   align-items: center;
   flex-direction: column;
   
+  
 }
 .privacy-head{
   padding: 200px 0 0 0;
@@ -5466,3 +5480,11 @@ color: #ffffff9f;
 .keywords{
     color: #ffffff;
 }
+
+
+
+
+
+
+
+

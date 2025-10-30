@@ -1110,5 +1110,53 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+
+
+
+// ..............portfolio section............................
+ // Function to activate portfolio filtering
+
+
+
+function initPortfolioFilter() {
+  const buttons = document.querySelectorAll(".ser-option");
+  const cols = document.querySelectorAll(".col-md-3");
+
+  if (!buttons.length || !cols.length) return;
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const selected = button.dataset.filter;
+
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      cols.forEach(col => {
+        const cards = col.querySelectorAll(".mil-work-card");
+        let hasVisible = false;
+
+        cards.forEach(card => {
+          const categories = card.dataset.category ? card.dataset.category.split(" ") : [];
+          if (selected === "all" || categories.includes(selected)) {
+            card.classList.remove("hide");
+            hasVisible = true;
+          } else {
+            card.classList.add("hide");
+          }
+        });
+
+        if (hasVisible) col.classList.remove("hide");
+        else col.classList.add("hide");
+      });
+    });
+  });
+}
+
+// Run when the page first loads
+initPortfolioFilter();
+
+swup.hooks.on('page:view', () => {
+  initPortfolioFilter();
+});
 });
 
