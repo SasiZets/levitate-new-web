@@ -5410,6 +5410,19 @@ color: #ffffff9f;
   gap: 30px;
   padding: 30px;
   margin-bottom: 130px;
+  justify-content: center;
+  align-items: center;
+   
+}
+.social-media2{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%;
+  gap: 30px;
+  padding: 30px;
+  margin-bottom: 130px;
+  justify-content: center;
+  align-items: center;
    
 }
 .c1{
@@ -5435,7 +5448,7 @@ color: #ffffff9f;
 }
 @media (max-width:780px) {
 
-.social-media{
+.social-media ,.social-media2{
   grid-template-columns: repeat(2,1fr);
    
 }
@@ -5443,7 +5456,7 @@ color: #ffffff9f;
 }
 @media (max-width:550px) {
 
-.social-media{
+.social-media , .social-media2{
   grid-template-columns: repeat(1,1fr);
    
 }
