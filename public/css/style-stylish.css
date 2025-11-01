@@ -5546,6 +5546,12 @@ padding:30px;
 }
 
 
+@media (max-width:900px) {
+  .partner-shows{
+   padding: 100px 30px 120px 30px;
+  }
+  
+}
 
 
 
