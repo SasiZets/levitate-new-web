@@ -5518,7 +5518,7 @@ padding:30px;
   display: flex;
   
   gap: 80px;
-  animation: scroll 25s linear infinite;
+  animation: scroll 40s linear infinite;
   width: max-content;
 }
 
