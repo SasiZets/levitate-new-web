@@ -578,12 +578,12 @@ a {
 }
 @media (max-width: 1200px) {
   .mil-display3 {
-    font-size: calc(1rem + 4.3vw);
+    font-size: calc(1rem + 3.3vw);
   }
 }
 @media (max-width: 992px) {
   .mil-display3 {
-    font-size: calc(1rem + 5.3vw);
+    font-size: calc(1rem + 3.3vw);
   }
 }
 @media (max-width: 768px) {
