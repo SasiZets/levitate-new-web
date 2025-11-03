@@ -1164,6 +1164,11 @@ function initPortfolioFilter() {
           noResults.style.display = "none";
         }
       }
+
+      // Important: update ScrollTrigger/ScrollSmoother after DOM changes
+      if (typeof ScrollTrigger !== 'undefined') {
+        ScrollTrigger.refresh();
+      }
     });
   });
 }

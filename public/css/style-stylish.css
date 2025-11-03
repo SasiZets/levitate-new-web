@@ -5546,6 +5546,12 @@ padding:30px;
   }
 }
 
+/* Ensure portfolio cards are visible immediately (avoid hidden until scroll) */
+.mil-work-card .mil-cover.mil-up {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 
 
 
