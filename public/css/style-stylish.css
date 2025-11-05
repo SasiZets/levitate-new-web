@@ -5470,6 +5470,7 @@ color: #ffffff9f;
   
   
 }
+
 .privacy-head{
   padding: 200px 0 0 0;
 }
@@ -5485,7 +5486,7 @@ color: #ffffff9f;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   padding-left:40px;
+   padding-left:15%;
    margin-bottom: 80px;
 
    
