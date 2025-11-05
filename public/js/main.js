@@ -1180,6 +1180,41 @@ swup.hooks.on('page:view', () => {
   initPortfolioFilter();
 });
 
+    // Horizontal scroll controls for portfolio filters
+    (function initFilterScroller(){
+        const wrapper = document.querySelector('.services-wrapper');
+        const scroller = document.querySelector('.services-option.ser-scroll');
+        const leftBtn = document.querySelector('.ser-nav.ser-left');
+        const rightBtn = document.querySelector('.ser-nav.ser-right');
+        if (!wrapper || !scroller || !leftBtn || !rightBtn) return;
+
+        const step = 240; // px per click
+        leftBtn.addEventListener('click', () => {
+            scroller.scrollBy({ left: -step, behavior: 'smooth' });
+        });
+        rightBtn.addEventListener('click', () => {
+            scroller.scrollBy({ left: step, behavior: 'smooth' });
+        });
+        // Allow vertical wheel to move horizontally over the scroller
+        scroller.addEventListener('wheel', (e) => {
+            if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+                scroller.scrollBy({ left: e.deltaY, behavior: 'auto' });
+                e.preventDefault();
+            }
+        }, { passive: false });
+        // Update button disabled state
+        const updateButtons = () => {
+            const max = scroller.scrollWidth - scroller.clientWidth - 1;
+            leftBtn.disabled = scroller.scrollLeft <= 0;
+            rightBtn.disabled = scroller.scrollLeft >= max;
+            leftBtn.style.opacity = leftBtn.disabled ? 0.4 : 1;
+            rightBtn.style.opacity = rightBtn.disabled ? 0.4 : 1;
+        };
+        scroller.addEventListener('scroll', updateButtons);
+        window.addEventListener('resize', updateButtons);
+        updateButtons();
+    })();
+
     document.querySelectorAll('a.mil-tp-btn').forEach(link => {
         link.addEventListener('click', function () {
             const menuBtn = document.querySelector('.mil-menu-btn');

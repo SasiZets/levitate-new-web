@@ -5345,19 +5345,26 @@ footer
   flex-direction: column;
 }
 /* .........................SERVICES DESIGN.................................................... */
-
-.services-option{
+.service-holder {
   width: 100%;
-gap: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 60px;
-  flex-wrap: wrap;
-    z-index: 10;
-
+  
+  overflow-x: hidden;
+  position: relative;
 }
-.ser-option{
+
+.services-wrapper {
+  padding: 0 100px 60px 100px;
+  overflow: hidden;
+}
+
+.services-option {
+  display: flex;
+  width: max-content;
+  gap: 12px;
+  padding: 30px;
+}
+
+.ser-option {
   width: 222px;
   height: 42px;
   border-radius: 60px;
@@ -5365,13 +5372,12 @@ gap: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family:"Lexend", sans-serif;
-font-weight: 400;
-font-size: 14px;
-color: #ffffff9f;
-  z-index: 10;
-
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff9f;
 }
+
 .ser-option:hover{
   transform: scale(1.1); 
   transition: all 0.3s ease-in-out;
@@ -5397,9 +5403,9 @@ color: #ffffff9f;
 }
 
 /* ..................poster desgign option......................................................... */
-.poster{
+/* .poster{
   display: none;
-}
+} */
 
 /* .......................grid layout .................................................................... */
 
@@ -5578,6 +5584,60 @@ padding:30px;
 
   }
 }
+
+/* Portfolio filter scroller */
+.services-wrapper { 
+  display:flex;
+   align-items:center; 
+   gap:12px; 
+   justify-content:center; 
+  }
+.services-option.ser-scroll {
+	--chip-w: 160px;
+	--chip-gap: 12px;
+	display:flex;
+	overflow-x:auto;
+	gap:22px;
+	scroll-behavior:smooth;
+	width: 90%;
+	max-width: 90%;
+	margin: 0 auto;
+}
+.services-option.ser-scroll::-webkit-scrollbar { 
+  display:none;
+ }
+.ser-option { 
+  white-space:nowrap;
+   flex: 0 0 var(--chip-w);
+    text-align:center;
+   }
+.ser-nav {
+   background:transparent;
+   color:#fff; 
+   border:1px solid rgba(255,255,255,0.25);
+    width:36px;
+     height:36px;
+      border-radius:18px;
+      display:flex; 
+      align-items:center; 
+      justify-content:center;
+       cursor:pointer; 
+      }
+.ser-nav:hover { 
+  border-color:#fff; 
+}
+@media (max-width: 576px) {
+	.services-option.ser-scroll {
+     width: 95%; 
+     max-width: 95%; }
+	.ser-nav { 
+    width:32px;
+     height:32px; }
+     .services-wrapper{
+      padding: 0  20px 0 20px;
+     }
+}
+
 
 
 
