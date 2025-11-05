@@ -1179,5 +1179,19 @@ initPortfolioFilter();
 swup.hooks.on('page:view', () => {
   initPortfolioFilter();
 });
+
+    document.querySelectorAll('a.mil-tp-btn').forEach(link => {
+        link.addEventListener('click', function () {
+            const menuBtn = document.querySelector('.mil-menu-btn');
+            const menuFrame = document.querySelector('.mil-menu-frame');
+            const btnFrame = document.querySelector('.mil-buttons-tp-frame');
+            const tp2 = document.querySelector('.mil-top-panel-2');
+            if (menuBtn) menuBtn.classList.remove('mil-active');
+            if (menuFrame) menuFrame.classList.remove('mil-active');
+            if (btnFrame) btnFrame.classList.remove('mil-active');
+            if (tp2) tp2.classList.remove('mil-menu-open');
+            // Do not prevent default; allow navigation to proceed
+        });
+    });
 });
 
