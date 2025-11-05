@@ -5468,12 +5468,13 @@ color: #ffffff9f;
   align-items: center;
   flex-direction: column;
   width: max-content;
+  padding:4%;
   
   
 }
 
 .privacy-head{
-  padding: 200px 0 0 0;
+  padding: 40px 0 0 0;
 }
 .priv-date{
   display: flex;
@@ -5498,7 +5499,7 @@ color: #ffffff9f;
 }
 
 .partner-shows {
-  width: 100%;
+  width:max-content;
 
   overflow: hidden;
   padding: 100px 0;
@@ -5509,8 +5510,30 @@ color: #ffffff9f;
   background:transparent;
 }
 
+
+@media (max-width:1200px) {
+.privacy-head{
+  font-size: 70px;
+}
+}
+@media (max-width:780px) {
+.privacy-head{
+  font-size: 60px;
+}
+}
+@media (max-width:550px) {
+.privacy-head{
+  font-size: 46px;
+}
+}
+@media (max-width:450px) {
+.privacy-head{
+  font-size: 30px;
+}
+}
+
 .partner-holder {
-  width: 100%;
+  width: max-content;
 padding:30px;
   
   overflow: hidden;
