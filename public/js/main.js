@@ -1188,7 +1188,7 @@ swup.hooks.on('page:view', () => {
         const rightBtn = document.querySelector('.ser-nav.ser-right');
         if (!wrapper || !scroller || !leftBtn || !rightBtn) return;
 
-        const step = 240; // px per click
+        const step = 234; // px per click
         leftBtn.addEventListener('click', () => {
             scroller.scrollBy({ left: -step, behavior: 'smooth' });
         });
