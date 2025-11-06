@@ -2993,6 +2993,7 @@ menu window
           justify-content: space-between;
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+ 
 }
 .mil-menu-frame .mil-menu-window .mil-menu-section {
   border-top: solid 1px #181817;
@@ -5638,9 +5639,31 @@ padding:30px;
      }
 }
 
+.links-part{
+display: none;
+}
+.links{
+  list-style: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: left;
+  padding-left:30px;
+  border-left: solid 4px #256667;
+  text-transform: uppercase;
+  line-height: 35px;
+  margin-bottom: 100px;
 
+}
 
-
+@media (max-width:991px) {
+  .links-part{
+display: block;
+}
+.mil-menu-window{
+  overflow-y: scroll;
+}
+  
+}
 
 
 
