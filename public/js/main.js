@@ -1239,5 +1239,62 @@ swup.hooks.on('page:view', () => {
             }
         });
     });
+
+    // Fresh hover-swap initializer
+function initHoverSwapFresh() {
+  const imgs = document.querySelectorAll('img.changeable[data-hover]');
+  imgs.forEach((img) => {
+    if (img.dataset.swapBound === '1') return;
+
+    const hoverSrc = img.dataset.hover;
+    if (!hoverSrc) return;
+
+    // Ensure parent frame exists and is the hover target
+    const frame = img.closest('.mil-hover-frame') || img.parentElement;
+    if (!frame) return;
+
+    // Create overlay image once (crossfade)
+    const overlay = new Image();
+    overlay.src = hoverSrc; // preload by assigning
+    overlay.className = 'hover-swap-layer';
+
+    // Insert overlay above original
+    frame.appendChild(overlay);
+
+    // Hover handlers on frame for better reliability
+    const enter = () => frame.classList.add('hover-on');
+    const leave = () => frame.classList.remove('hover-on');
+
+    frame.addEventListener('mouseenter', enter);
+    frame.addEventListener('mouseleave', leave);
+
+    // Touch: tap to show, second tap to hide
+    frame.addEventListener('touchstart', () => {
+      frame.classList.add('hover-on');
+    }, { passive: true });
+    frame.addEventListener('touchend', () => {
+      setTimeout(() => frame.classList.remove('hover-on'), 150);
+    }, { passive: true });
+
+    // In case overlay fails, do nothing visible
+    overlay.addEventListener('error', () => {
+      frame.classList.remove('hover-on');
+    });
+
+    img.dataset.swapBound = '1';
+  });
+}
+
+// Run on initial load
+initHoverSwapFresh();
+
+// Also run after Swup page transitions
+if (typeof swup !== 'undefined' && swup?.hooks) {
+  swup.hooks.on('page:view', () => {
+    initHoverSwapFresh();
+  });
+}
+
+
 });
 
