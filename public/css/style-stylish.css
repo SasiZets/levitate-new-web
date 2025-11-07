@@ -4709,7 +4709,17 @@ portfolio
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
+.mil-work-card .mil-cover .mil-hover-frame a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+  cursor: pointer;
+}
 .mil-work-card .mil-cover .mil-hover-frame img {
+  pointer-events: none;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -4737,6 +4747,8 @@ portfolio
           justify-content: flex-end;
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  pointer-events: none;
+  z-index: 1;
  background: 
     linear-gradient(
       to top right,
@@ -4793,7 +4805,7 @@ portfolio
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-work-card .mil-hover-overlay .mil-descr .mil-text-frame {
-  padding: 0;
+
   width: 100%;
 
 }
@@ -4850,6 +4862,38 @@ portfolio
 
 .mil-divider {
   border-bottom: solid 1px #181817;
+}
+
+@media (max-width:767px) {
+  .mil-hover-overlay , .mil-head5 ,.mil-descr  {
+    display: none;
+  }
+  /* Disable hover effects on portfolio images */
+  .mil-work-card .mil-cover .mil-hover-frame {
+    -webkit-transform: scale(1) !important;
+    transform: scale(1) !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+  .mil-work-card:hover .mil-hover-frame {
+    -webkit-transform: scale(1) !important;
+    transform: scale(1) !important;
+  }
+  .mil-work-card:hover .mil-hover-overlay {
+    opacity: 0 !important;
+  }
+  /* Make image links fully clickable on mobile */
+  .mil-work-card .mil-cover .mil-hover-frame a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+  }
+  .mil-work-card .mil-cover .mil-hover-frame img {
+    pointer-events: none;
+  }
 }
 
 /* -------------------------------------------
@@ -5379,6 +5423,7 @@ footer
   font-weight: 400;
   font-size: 14px;
   color: #ffffff9f;
+  padding:0% 10%;
 }
 
 .ser-option:hover{
@@ -5508,15 +5553,15 @@ footer
 }
 
 .partner-shows {
-  width:max-content;
-
+  width: 100%;
+  min-width: 1200px;
   overflow: hidden;
-  padding: 100px 0;
+  padding: 10% 5%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 160px 140px 160px;
-  background:transparent;
+  background: transparent;
+  margin: 0 auto;
 }
 
 
@@ -5543,18 +5588,18 @@ footer
 
 .partner-holder {
   width: max-content;
-padding:30px;
-  
+  padding: 30px;
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
 }
 
 .partner-track {
   display: flex;
   
   gap: 80px;
-  animation: scroll 25s linear infinite;
-  width: max-content;
+  animation: scroll 10s linear infinite;
+  width: 100%;
 }
 
 .partner-track img {
@@ -5580,11 +5625,19 @@ padding:30px;
     transform: translateX(-50%);
   }
 }
-@media  (max-width:900px) {
-
+@media (max-width: 1200px) {
   .partner-shows {
-    padding: 100px 30px 120px 30px;
+    min-width: 100%;
+    padding: 10% 3%;
+  }
+}
 
+@media (max-width: 900px) {
+  .partner-shows {
+    padding: 10% 2%;
+  }
+  .partner-holder {
+    padding: 20px;
   }
 }
 

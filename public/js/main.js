@@ -1228,5 +1228,16 @@ swup.hooks.on('page:view', () => {
             // Do not prevent default; allow navigation to proceed
         });
     });
+
+    // Ensure portfolio cover links work
+    document.querySelectorAll('.mil-work-card .mil-cover-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href && href !== '#' && href !== 'javascript:void(0)') {
+                // Allow navigation to proceed
+                window.location.href = href;
+            }
+        });
+    });
 });
 
